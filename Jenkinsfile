@@ -12,7 +12,7 @@ maven "maven"
 	url = "https://327575778641.dkr.ecr.us-east-1.amazonaws.com"
 	imagename = "327575778641.dkr.ecr.us-east-1.amazonaws.com/uday-ecr-repo"
 	cluster = "uday-cluster"
-        service = "uday-ecs1"
+        service = "ecs"
     }
 /*
 triggers{
