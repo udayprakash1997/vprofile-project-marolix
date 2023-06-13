@@ -28,7 +28,7 @@ stages{
 
   stage('CheckOutCode'){
     steps{
-    git 'https://github.com/udayprakash1997/vprofile-project-marolix.git
+    git 'https://github.com/udayprakash1997/vprofile-project-marolix.git'
 	}
   }
   
