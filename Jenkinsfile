@@ -100,12 +100,13 @@ stages{
      }
      */
 	stage('Send EMAIL Notification'){
+		steps{
 		emailext body: '''The build is completed!!
 
        Regards,
        Uday.
        ''', subject: 'build is success', to: 'udaya.marolix@gmail.com'
 }
-				
+}				
 }
 }
