@@ -6,15 +6,15 @@ tools{
 maven "maven"
 
 }
-/*
+
 	environment {
 	credentials = 'ecr:us-east-1:aws-credentials'
 	url = "https://327575778641.dkr.ecr.us-east-1.amazonaws.com"
 	imagename = "327575778641.dkr.ecr.us-east-1.amazonaws.com/uday-ecr-repo"
-	cluster = "udayecs"
-        service = "udayservice"
+	cluster = "uday-cluster"
+        service = "uday-ecs1"
     }
-
+/*
 triggers{
 pollSCM('* * * * *')
 }
