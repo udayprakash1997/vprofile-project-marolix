@@ -58,7 +58,7 @@ stages{
   }
   }
 
-/*
+
  stage('Build Docker Image') {
   steps {
     sh 'docker build -t imagename .'
@@ -70,7 +70,7 @@ stages{
     sh 'docker run -itd -p 89:8080 --name cont2 image2'
   }
 }
-*/
+
 
 	 stage('build docker image') {
 	       steps {
