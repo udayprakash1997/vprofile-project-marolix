@@ -24,7 +24,13 @@
         <sonar.login>admin</sonar.login>
         <sonar.password>admin</sonar.password>
     </properties>
-
+    <distributionManagement>
+	 <snapshotRepository>
+            <id>nexus</id>
+            <name>vprofile snapshot</name>
+            <url>http://3.94.53.21:8081/repository/vprofile-snapshot/</url>
+         </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -123,13 +129,7 @@
 		</dependency>
    
     </dependencies>
-    <distributionManagement>
-	 <snapshotRepository>
-            <id>nexus</id>
-            <name>vprofile snapshot</name>
-            <url>http://3.94.53.21:8081/repository/vprofile-snapshot/</url>
-        </snapshotRepository>
-    </distributionManagement>
+    
     <build>
         <plugins>
             <plugin>
