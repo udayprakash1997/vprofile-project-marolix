@@ -52,7 +52,7 @@ stages{
   /*
   stage('DeployAppIntoTomcat'){
   steps{
-  sshagent(['f69ee4f7-2422-4062-bff8-0f6445bdbf1f']) {
+  sshagent(['']) {
    sh "scp -o StrictHostKeyChecking=no target/studentapp-2.5-SNAPSHOT.war ec2-user@3.91.59.202:/opt/tomcat/webapps/"    
   }
   }
