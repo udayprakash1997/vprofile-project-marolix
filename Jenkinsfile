@@ -90,6 +90,7 @@ stages{
 
 	    }
 	  }
+	/*
 	  stage('Deploy to ecs') {
           steps {
           withAWS(credentials: 'aws-credentials', region: 'us-east-1') {
@@ -97,7 +98,13 @@ stages{
         }
       }
      }
+     */
+	stage('Send EMAIL Notification'){
+		emailext body: '''The build is completed!!
 
+       Regards,
+       Uday.
+       ''', subject: 'build is success', to: 'udaya.marolix@gmail.com'
 }
 				
 }
