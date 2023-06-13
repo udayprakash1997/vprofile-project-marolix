@@ -49,7 +49,7 @@ stages{
   sh  "mvn clean deploy"
   }
   }
- 
+/*
   stage('DeployAppIntoTomcat'){
   steps{
   sshagent(['sshtoken']) {
@@ -57,7 +57,7 @@ stages{
   }
   }
   }
- 
+ */
 /*
  stage('Build Docker Image') {
   steps {
