@@ -124,7 +124,7 @@
     <distributionManagement>
 	    <snapshotRepository>
              <id>nexus</id>
-            <name>uday Snapshot Releases</name>
+            <name>vprofile snapshot</name>
             <url>http://3.94.53.21:8081/repository/vprofile-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
