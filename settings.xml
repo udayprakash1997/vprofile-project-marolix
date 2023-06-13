@@ -5,9 +5,9 @@
 
   <servers>
     <server>
-      <id>${SNAP-REPO}</id>
-      <username>${NEXUS-USER}</username>
-      <password>${NEXUS-PASS}</password>
+      <id>nexus</id>
+      <username>admin</username>
+      <password>admin</password>
     </server>
     <server>
       <id>${RELEASE-REPO}</id>
