@@ -49,15 +49,15 @@ stages{
   sh  "mvn clean deploy"
   }
   }
-  /*
+ 
   stage('DeployAppIntoTomcat'){
   steps{
-  sshagent(['']) {
-   sh "scp -o StrictHostKeyChecking=no target/studentapp-2.5-SNAPSHOT.war ec2-user@3.91.59.202:/opt/tomcat/webapps/"    
+  sshagent(['sshtoken']) {
+   sh "scp -o StrictHostKeyChecking=no target/vprofile-v2.war ec2-user@44.201.193.92:/opt/tomcat/webapps/"    
   }
   }
   }
-  */
+ 
 /*
  stage('Build Docker Image') {
   steps {
