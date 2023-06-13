@@ -58,7 +58,7 @@ stages{
   }
   }
 
-
+/*
  stage('Build Docker Image') {
   steps {
     sh 'docker build -t imagename1 .'
@@ -70,7 +70,7 @@ stages{
     sh 'docker run -itd -p 89:8080 --name cont1 imagename1'
   }
 }
-
+*/
 
 	 stage('build docker image') {
 	       steps {
@@ -78,8 +78,7 @@ stages{
 	            dockerImage =docker.build(imagename)
 	         }
 	       }
-	 }
-/*	  
+	 }	  
 	    stage('upload to ecr') {
 	    steps {
 	        script {
@@ -98,7 +97,7 @@ stages{
         }
       }
      }
- */
+
 }
 				
 }
